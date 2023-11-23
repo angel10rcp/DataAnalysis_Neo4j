@@ -1,0 +1,404 @@
+//CREACION DE TITULARES DE CUENTAS (PERSONAS)
+
+CREATE (Titular_de_la_cuenta1:Titular_de_la_cuenta {
+       		Nombre: "Pedro",
+       		Apellido: "Ponce",
+       		Cedula: "0400730057",
+			FechaNacimiento: "1985–02–15",
+			Genero: "Masculino",
+			CedulaPadre:"0465628435",
+			CedulaMadre:"0468226684"})
+
+CREATE (Titular_de_la_cuenta2:Titular_de_la_cuenta {
+			Nombre: "Mayra",
+			Apellido: "Feijo",
+			Cedula: "1712076148",
+			FechaNacimiento: "1980–06–12",
+			Genero: "Femenino",
+			CedulaPadre:"1756483216",
+			CedulaMadre:"1725684384" })
+
+CREATE (Titular_de_la_cuenta3:Titular_de_la_cuenta {
+			Nombre: "Gabriel",
+			Apellido: "Delgado",
+			Cedula: "1718016475",
+			FechaNacimiento: "1983–07–10",
+			Genero: "Masculino",
+			CedulaPadre:"1794563542",
+			CedulaMadre:"1769842381" })
+			
+CREATE (Titular_de_la_cuenta4:Titular_de_la_cuenta {
+       		Nombre: "Angel",
+       		Apellido: "Cárdenas",
+       		Cedula: "1750508234",
+			FechaNacimiento: "2000–10–26",
+			Genero: "Masculino",
+			CedulaPadre:"1786994568",
+			CedulaMadre:"1709458462" })
+
+CREATE (Titular_de_la_cuenta5:Titular_de_la_cuenta {
+			Nombre: "Marcelo",
+			Apellido: "Carrera",
+			Cedula: "1709651405",
+			FechaNacimiento: "1993–04–27",
+			Genero: "Masculino",
+			CedulaPadre:"1748632133",
+			CedulaMadre:"1799846662" })
+
+CREATE (Titular_de_la_cuenta6:Titular_de_la_cuenta {
+			Nombre: "Juan",
+			Apellido: "Carrera",
+			Cedula: "1798742536",
+			FechaNacimiento: "1970–03–12",
+			Genero: "Masculino",
+			CedulaPadre:"1765138843",
+			CedulaMadre:"1754968652" })
+
+CREATE (Titular_de_la_cuenta7:Titular_de_la_cuenta {
+       		Nombre: "Diego",
+       		Apellido: "Zurita",
+       		Cedula: "0478621356",
+			FechaNacimiento: "1997–01–06",
+			Genero: "Masculino",
+			CedulaPadre:"0465765665",
+			CedulaMadre:"0468521568" })
+
+CREATE (Titular_de_la_cuenta8:Titular_de_la_cuenta {
+			Nombre: "Fernando",
+			Apellido: "Rodriguez",
+			Cedula: "1774524634",
+			FechaNacimiento: "1977–08–08",
+			Genero: "Masculino",
+			CedulaPadre:"1765816512",
+			CedulaMadre:"1799952317" })
+
+CREATE (Titular_de_la_cuenta9:Titular_de_la_cuenta {
+			Nombre: "Alexander",
+			Apellido: "Parra",
+			Cedula: "1778954385",
+			FechaNacimiento: "1983–04–03",
+			Genero: "Masculino",
+			CedulaPadre:"1756542231",
+			CedulaMadre:"1756548953" })
+			
+CREATE (Titular_de_la_cuenta10:Titular_de_la_cuenta {
+       		Nombre: "Belén",
+       		Apellido: "Saltos",
+       		Cedula: "1750238789",
+			FechaNacimiento: "1999–03–12",
+			Genero: "Femenino",
+			CedulaPadre:"1765123816",
+			CedulaMadre:"1765123412" })
+			
+
+//CREACION DE VEHIICULOS
+CREATE (Vehiculo1:Vehiculo {
+			Placas: "PBS234",
+			Marca: "Toyota",
+			Modelo: "Hilux" })
+			
+CREATE (Vehiculo2:Vehiculo {
+			Placas: "MZU324",
+			Marca: "Ford",
+			Modelo: "F150" })
+			
+			
+
+//CREACION DE ARMAS
+CREATE (Arma1:Arma {
+			Serie: "AZ4519",
+			Marca: "Glock",
+			Modelo: "M7",
+			Fecha: "4/5/2021" })
+			
+CREATE (Arma2:Arma {
+			Serie: "BC2351",
+			Marca: "Bersa",
+			Modelo: "Q4206",
+			Fecha: "7/8/2019" })
+			
+CREATE (Arma3:Arma {
+			Serie: "BC6756",
+			Marca: "Beretta",
+			Modelo: "PX4",
+			Fecha: "9/12/2021" })
+			
+CREATE (Arma4:Arma {
+			Serie: "XC6232",
+			Marca: "Taurus",
+			Modelo: "82S",
+			Fecha: "2/1/2022" })
+			
+
+//CREACION DE DROGAS
+CREATE (Droga1:Droga {
+			Tipo: "Estimulantes",
+			Droga: "Cocaina",
+			Fecha: "7/3/2021" })
+			
+CREATE (Droga2:Droga {
+			Tipo: "Alucinógenas",
+			Droga: "Marihuana",
+			Fecha: "9/3/2021" })
+			
+CREATE (Droga3:Droga {
+			Tipo: "Estimulantes",
+			Droga: "Heroína",
+			Fecha: "10/12/2021" })
+			
+
+//CREACION DE BOLETAS
+CREATE (Boleta1:Boleta {
+			Motivo: "Asalto",
+			Ciudad: "Quito",
+			Fecha: "11/8/2021" })
+			
+CREATE (Boleta2:Boleta {
+			Motivo: "Robo",
+			Ciudad: "Quito",
+			Fecha: "9/9/2021" })
+			
+CREATE (Boleta3:Boleta {
+			Motivo: "Robo",
+			Ciudad: "Ambato",
+			Fecha: "9/9/2021" })
+			
+
+
+// Create Direccion
+CREATE (Direccion1:Direccion {
+			Street: "123 NW 1st",
+			City: "Quito",
+			State: "Pichincha",
+			ZipCode: "EC173030" })
+			
+CREATE (Direccion2:Direccion {
+			Street: "153 NW 1st",
+			City: "Ambato",
+			State: "Tungurahua",
+			ZipCode: "EC176740" })
+			
+
+
+// Create Phone Number
+CREATE (Numero_Telefonico1:Numero_Telefonico { Numero_Telefonico: "555-555-5555" })
+CREATE (Numero_Telefonico2:Numero_Telefonico { Numero_Telefonico: "555-555-1234" })
+CREATE (Numero_Telefonico3:Numero_Telefonico { Numero_Telefonico: "555-555-6734" })
+CREATE (Numero_Telefonico4:Numero_Telefonico { Numero_Telefonico: "555-555-8452" })
+CREATE (Numero_Telefonico5:Numero_Telefonico { Numero_Telefonico: "555-555-5435" })
+CREATE (Numero_Telefonico6:Numero_Telefonico { Numero_Telefonico: "555-555-2345" })
+CREATE (Numero_Telefonico7:Numero_Telefonico { Numero_Telefonico: "555-555-9867" })
+CREATE (Numero_Telefonico8:Numero_Telefonico { Numero_Telefonico: "555-555-5679" })
+
+
+// Create SSN
+CREATE (ssn1:SSN { SSN: "241-23-1234" })
+CREATE (ssn2:SSN { SSN: "241-23-4567"})
+
+// Create Credit Card
+CREATE (Tarjeta_Credito1:Tarjeta_Credito {
+			Numero_de_Cuenta: "1234567890123456",
+			Limite: 5000, 
+			Balance: 1442.23,
+			Fecha_Expiracion: "01-20",
+			Codigo_de_seguridad: "534" })
+
+CREATE (Tarjeta_Credito2:Tarjeta_Credito {
+			Numero_de_Cuenta: "1234567890123456",
+			Limite: 4000, 
+			Balance: 2345.54,
+			Fecha_Expiracion: "02-20",
+			Codigo_de_seguridad: "456" })
+			
+CREATE (Tarjeta_Credito3:Tarjeta_Credito {
+			Numero_de_Cuenta: "6345432342346745",
+			Limite: 3000, 
+			Balance: 2325.21,
+			Fecha_Expiracion: "07-20",
+			Codigo_de_seguridad: "345" })
+			
+CREATE (Tarjeta_Credito4:Tarjeta_Credito {
+			Numero_de_Cuenta: "8975667356456432",
+			Limite: 7000, 
+			Balance: 2345.76,
+			Fecha_Expiracion: "04-20",
+			Codigo_de_seguridad: "567" })
+			
+CREATE (Tarjeta_Credito5:Tarjeta_Credito {
+			Numero_de_Cuenta: "9876746565456334",
+			Limite: 2000, 
+			Balance: 3453.87,
+			Fecha_Expiracion: "05-20",
+			Codigo_de_seguridad: "543" })
+			
+CREATE (Tarjeta_Credito6:Tarjeta_Credito {
+			Numero_de_Cuenta: "7854756465463346",
+			Limite: 1000, 
+			Balance: 2354.96,
+			Fecha_Expiracion: "06-20",
+			Codigo_de_seguridad: "122" })	
+			
+
+// Create Bank Account
+CREATE (Cuenta_Bancaria1:Cuenta_Bancaria {
+			Numero_de_Cuenta: "2345678901234567",
+			Balance: 7054.43 })
+			
+CREATE (Cuenta_Bancaria2:Cuenta_Bancaria {
+			Numero_de_Cuenta: "3456789012345678",
+			Balance: 4231.12 })
+
+CREATE (Cuenta_Bancaria3:Cuenta_Bancaria {
+			Numero_de_Cuenta: "4567890123456789",
+			Balance:"12345.45" })
+			
+CREATE (Cuenta_Bancaria4:Cuenta_Bancaria {
+			Numero_de_Cuenta: "7546462463453567",
+			Balance: 3054.56 })
+			
+CREATE (Cuenta_Bancaria5:Cuenta_Bancaria {
+			Numero_de_Cuenta: "9678678678678678",
+			Balance: 6231.11 })
+
+CREATE (Cuenta_Bancaria6:Cuenta_Bancaria {
+			Numero_de_Cuenta: "2343564365742344",
+			Balance:"32345.15" })
+			
+CREATE (Cuenta_Bancaria7:Cuenta_Bancaria {
+			Numero_de_Cuenta: "9867856756756743",
+			Balance: 8054.41 })
+			
+CREATE (Cuenta_Bancaria8:Cuenta_Bancaria {
+			Numero_de_Cuenta: "1234636546456785",
+			Balance: 9231.23 })
+
+CREATE (Cuenta_Bancaria9:Cuenta_Bancaria {
+			Numero_de_Cuenta: "6575673452737734",
+			Balance: 7231.19 })
+
+CREATE (Cuenta_Bancaria10:Cuenta_Bancaria {
+			Numero_de_Cuenta: "6546345783224532",
+			Balance: 52231.22 })
+
+
+// Create Unsecured Loan
+CREATE (PRESTAMO_NO_ASEGURADO1:PRESTAMO_NO_ASEGURADO {
+			Numero_de_Cuenta: "4567890123456789-0",
+			Balance: 9045.53,
+			APR: .0541,
+			Monto_de_prestamo: 12000.00 })	
+
+CREATE (PRESTAMO_NO_ASEGURADO2:PRESTAMO_NO_ASEGURADO {
+			Numero_de_Cuenta: "5678901234567890-0",
+			Balance: 46341.95, APR: .0341,
+			Monto_de_prestamo: 22000.00 })
+			
+CREATE (PRESTAMO_NO_ASEGURADO3:PRESTAMO_NO_ASEGURADO {
+			Numero_de_Cuenta: "5435436237654564-0",
+			Balance: 56341.52, APR: .0341,
+			Monto_de_prestamo: 24000.00 })
+			
+CREATE (PRESTAMO_NO_ASEGURADO4:PRESTAMO_NO_ASEGURADO {
+			Numero_de_Cuenta: "7567856634565467-0",
+			Balance: 26341.34, APR: .0341,
+			Monto_de_prestamo: 23000.00 })
+			
+
+			
+			
+
+// ------------------ CREACION DE RELACIONES -------------------------
+
+ MERGE (Titular_de_la_cuenta1)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta2)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta3)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta4)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta7)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta8)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta9)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta10)-[:COMO_DIRECCION]->(Direccion1)
+ MERGE (Titular_de_la_cuenta5)-[:COMO_DIRECCION]->(Direccion2)
+ MERGE (Titular_de_la_cuenta6)-[:COMO_DIRECCION]->(Direccion2)
+ 
+ 
+MERGE (Titular_de_la_cuenta1)-[:COMO_Numero_de_telefono]->(Numero_Telefonico1)
+MERGE (Titular_de_la_cuenta2)-[:COMO_Numero_de_telefono]->(Numero_Telefonico1)
+MERGE (Titular_de_la_cuenta3)-[:COMO_Numero_de_telefono]->(Numero_Telefonico2)
+MERGE (Titular_de_la_cuenta4)-[:COMO_Numero_de_telefono]->(Numero_Telefonico3)
+MERGE (Titular_de_la_cuenta5)-[:COMO_Numero_de_telefono]->(Numero_Telefonico4)
+MERGE (Titular_de_la_cuenta6)-[:COMO_Numero_de_telefono]->(Numero_Telefonico4)
+MERGE (Titular_de_la_cuenta7)-[:COMO_Numero_de_telefono]->(Numero_Telefonico5)
+MERGE (Titular_de_la_cuenta8)-[:COMO_Numero_de_telefono]->(Numero_Telefonico6)
+MERGE (Titular_de_la_cuenta9)-[:COMO_Numero_de_telefono]->(Numero_Telefonico7)
+MERGE (Titular_de_la_cuenta10)-[:COMO_Numero_de_telefono]->(Numero_Telefonico8)
+
+
+MERGE (Titular_de_la_cuenta1)-[:COMO_SSN]->(ssn1)
+MERGE (Titular_de_la_cuenta2)-[:COMO_SSN]->(ssn1)
+MERGE (Titular_de_la_cuenta3)-[:COMO_SSN]->(ssn2)
+ 
+MERGE (Titular_de_la_cuenta1)-[:COMO_TARJETA_CREDITO]->(Tarjeta_Credito1)
+MERGE (Titular_de_la_cuenta2)-[:COMO_TARJETA_CREDITO]->(Tarjeta_Credito2)
+MERGE (Titular_de_la_cuenta3)-[:COMO_TARJETA_CREDITO]->(Tarjeta_Credito3)
+MERGE (Titular_de_la_cuenta4)-[:COMO_TARJETA_CREDITO]->(Tarjeta_Credito4)
+MERGE (Titular_de_la_cuenta5)-[:COMO_TARJETA_CREDITO]->(Tarjeta_Credito5)
+MERGE (Titular_de_la_cuenta6)-[:COMO_TARJETA_CREDITO]->(Tarjeta_Credito6)
+
+
+MERGE (Titular_de_la_cuenta1)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria1)
+MERGE (Titular_de_la_cuenta2)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria2)
+MERGE (Titular_de_la_cuenta3)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria3)
+MERGE (Titular_de_la_cuenta4)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria4)
+MERGE (Titular_de_la_cuenta5)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria5)
+MERGE (Titular_de_la_cuenta6)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria6)
+MERGE (Titular_de_la_cuenta7)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria7)
+MERGE (Titular_de_la_cuenta8)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria8)
+MERGE (Titular_de_la_cuenta9)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria9)
+MERGE (Titular_de_la_cuenta10)-[:COMO_Cuenta_Bancaria]->(Cuenta_Bancaria10)
+
+MERGE (Titular_de_la_cuenta2)-[:COMO_PRESTAMO_NO_ASEGURADO]->(PRESTAMO_NO_ASEGURADO1)
+MERGE (Titular_de_la_cuenta3)-[:COMO_PRESTAMO_NO_ASEGURADO]->(PRESTAMO_NO_ASEGURADO2)
+MERGE (Titular_de_la_cuenta5)-[:COMO_PRESTAMO_NO_ASEGURADO]->(PRESTAMO_NO_ASEGURADO3)
+MERGE (Titular_de_la_cuenta6)-[:COMO_PRESTAMO_NO_ASEGURADO]->(PRESTAMO_NO_ASEGURADO4)
+
+
+
+
+MERGE (Titular_de_la_cuenta1)-[:COMO_PROPIETARIO]->(Vehiculo2)
+MERGE (Titular_de_la_cuenta4)-[:COMO_PROPIETARIO]->(Vehiculo1)
+
+MERGE (Titular_de_la_cuenta6)-[:EN_POSESION]->(Vehiculo2)
+
+//MERGE (Titular_de_la_cuenta6)-[:COMO_HERMANO]->(Titular_de_la_cuenta5)
+
+MERGE (Titular_de_la_cuenta1)-[:COMO_PROPIETARIO]->(Arma1)
+
+MERGE (Titular_de_la_cuenta3)-[:COMO_PROPIETARIO]->(Arma2)
+MERGE (Titular_de_la_cuenta4)-[:COMO_PROPIETARIO]->(Arma3)
+MERGE (Titular_de_la_cuenta8)-[:COMO_PROPIETARIO]->(Arma4)
+
+
+MERGE (Titular_de_la_cuenta5)-[:EN_POSESION]->(Arma1)
+
+MERGE (Titular_de_la_cuenta5)-[:EN_POSESION]->(Droga1)
+MERGE (Titular_de_la_cuenta4)-[:EN_POSESION]->(Droga2)
+MERGE (Titular_de_la_cuenta10)-[:EN_POSESION]->(Droga3)
+
+
+MERGE (Titular_de_la_cuenta5)-[:COMO_ANTECEDENTES]->(Boleta1)
+MERGE (Titular_de_la_cuenta4)-[:COMO_ANTECEDENTES]->(Boleta2)
+MERGE (Titular_de_la_cuenta8)-[:COMO_ANTECEDENTES]->(Boleta3)
+
+
+MATCH (n:Titular_de_la_cuenta) SET n.img = 'https://cdn-icons-png.flaticon.com/512/1077/1077012.png'
+MATCH (n:Direccion) SET n.img = 'https://cdn-icons-png.flaticon.com/512/609/609803.png'
+MATCH (n:Cuenta_Bancaria) SET n.img = 'https://cdn-icons-png.flaticon.com/512/169/169850.png'
+MATCH (n:Numero_Telefonico) SET n.img = 'https://cdn-icons-png.flaticon.com/512/552/552489.png'
+MATCH (n:PRESTAMO_NO_ASEGURADO) SET n.img = 'https://cdn-icons-png.flaticon.com/512/888/888371.png'
+MATCH (n:SSN) SET n.img = 'https://cdn-icons-png.flaticon.com/512/3588/3588563.png'
+MATCH (n:Tarjeta_Credito) SET n.img = 'https://cdn-icons-png.flaticon.com/512/2922/2922888.png'
+
+MATCH (n:Vehiculo) SET n.img = 'https://cdn-icons-png.flaticon.com/512/741/741407.png'
+MATCH (n:Arma) SET n.img = 'https://cdn-icons-png.flaticon.com/512/1256/1256800.png'
+MATCH (n:Droga) SET n.img = 'https://cdn-icons-png.flaticon.com/512/3217/3217555.png'
+MATCH (n:Boleta) SET n.img = 'https://cdn-icons-png.flaticon.com/512/2689/2689780.png'

@@ -1,0 +1,11 @@
+//Primer Query
+LOAD CSV WITH HEADERS FROM "file:///C:/neoData.csv" as row  
+CREATE (a:Persona {cedula: row.identity,cedulaConyuge:coalesce(row.identity_spouse,"Desconocido"),
+cedulaPadre:coalesce(row.identity_father,"Desconocido"),cedulaMadre:coalesce(row.identity_mother,"Desconocido"),
+nombres:row.names,apellidos:row.lastnames,genero:row.sex,fechaNacimiento:coalesce(row.birthdate,"Desconocido")})
+
+//Segundo Query
+MATCH (a:Persona),(b:Persona) WITH a,b MATCH (a:Persona),(b:Persona) 
+WHERE a.cedulaPadre = b.cedula MERGE (b)-[r:PADRE]->(a)UNION 
+MATCH (a:Persona),(b:Persona) WITH a,b MATCH (a:Persona),(b:Persona)
+WHERE a.cedulaMadre = b.cedula MERGE (b)-[r:MADRE]->(a)

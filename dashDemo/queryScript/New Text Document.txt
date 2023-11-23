@@ -1,0 +1,18 @@
+MATCH p=(a:Titular_de_la_cuenta{Nombre:"Angel"})-[r*0..]-(b:Titular_de_la_cuenta{Nombre:"Pedro"})
+RETURN a,nodes(p),relationships(p),b
+
+MATCH (start:Titular_de_la_cuenta {Nombre:"Angel"}),(end:Titular_de_la_cuenta {Nombre:"Juan"}) 
+Match p=shortestPath((start)-[*]-(end)) 
+RETURN nodes(p) as nodes, relationships(p) as rels
+
+
+MATCH (start where start.Cedula="1750508234") ,(end where end.Cedula="1798742536") 
+Match p=shortestPath((start)-[*]-(end)) 
+RETURN nodes(p), relationships(p) 
+
+
+1750508234
+1798742536
+
+0400000477
+0400000261
